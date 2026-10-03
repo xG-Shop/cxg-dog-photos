@@ -1,4 +1,6 @@
-# cxg_companion_catalog
+# cxg-dog-photos
+
+Solo contiene fotos y la lista de razas: ningún código, ninguna clave.
 
 La colección de razas CXG que enseña la tienda de [cxg_companion](https://github.com/xG-Shop/cxg_companion). Cada servidor la lee desde aquí. Las razas que tiene instaladas se pueden adoptar y las demás salen bloqueadas, con su foto. Cuando se publica una raza nueva, aparece en todos los servidores sin que actualicen nada.
 
@@ -20,7 +22,7 @@ La colección de razas CXG que enseña la tienda de [cxg_companion](https://gith
       "label": "Dóberman",
       "ages": ["puppy", "juvenile", "adult"],
       "withers_cm": 68.0,
-      "photo": "https://raw.githubusercontent.com/xG-Shop/cxg_companion_catalog/main/photos/cxg_doberman.webp"
+      "photo": "https://raw.githubusercontent.com/xG-Shop/cxg-dog-photos/main/photos/cxg_doberman.webp"
     }
   ]
 }
@@ -36,7 +38,7 @@ La colección de razas CXG que enseña la tienda de [cxg_companion](https://gith
 2. Ejecuta el script:
 
    ```
-   python tools/build_catalog.py --bundle ../cxg_companion
+   python tools/build_catalog.py --pets "E:/[PRODIGY 4.0 ASSETS]/prodigy-insanity-assets/[PETS]" --bundle "E:/[PRODIGY 4.0 ASSETS]/prodigy-insanity-assets/[PETS]/cxg_companion"
    ```
 
    Con `--bundle` también se actualiza la copia que va dentro de cxg_companion, que sirve cuando no hay conexión.
@@ -47,7 +49,7 @@ La colección de razas CXG que enseña la tienda de [cxg_companion](https://gith
 En `cxg_companion/shared/genetics.lua`:
 
 ```lua
-Config.Catalog.Url = 'https://raw.githubusercontent.com/xG-Shop/cxg_companion_catalog/main/catalog.json'
+Config.Catalog.Url = 'https://raw.githubusercontent.com/xG-Shop/cxg-dog-photos/main/catalog.json'
 ```
 
 El companion lo vuelve a leer cada `Config.Catalog.RefreshMinutes`. Si la descarga falla, usa la copia incluida.

@@ -1,9 +1,9 @@
 """Builds the CXG breed collection from the dogs made with DOGS MAKER.
 
-    python tools/build_catalog.py [--pets <folder>] [--bundle <cxg_companion>]
+    python tools/build_catalog.py --pets <[PETS] folder> [--bundle <cxg_companion>]
 
-Reads every <model>_anims.json under --pets (default: the folder that holds
-this repository), groups the models by family (cxg_doberman, its _juvenile and
+Reads every <model>_anims.json under --pets (the folder with the breed
+resources), groups the models by family (cxg_doberman, its _juvenile and
 its _puppy) and writes catalog.json at the root of this repository. Photos:
 photos/<family>.webp; when missing, it is copied from the adult's resource
 (<family>/<family>_photo.webp, written by DOGS MAKER).
@@ -22,7 +22,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 # Where the photos are served from once this repository is on GitHub.
-BASE_URL = 'https://raw.githubusercontent.com/xG-Shop/cxg_companion_catalog/main/'
+BASE_URL = 'https://raw.githubusercontent.com/xG-Shop/cxg-dog-photos/main/'
 AGES = ('puppy', 'juvenile', 'adult')
 
 
@@ -50,7 +50,7 @@ def scan(pets):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--pets', type=Path, default=REPO.parent)
+    parser.add_argument('--pets', type=Path, required=True, help='folder with the breed resources ([PETS])')
     parser.add_argument('--bundle', type=Path, help='cxg_companion folder to refresh')
     args = parser.parse_args()
 
