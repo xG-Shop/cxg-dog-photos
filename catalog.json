@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "store": null,
+  "breeds": [
+    {
+      "family": "cxg_bullterrier",
+      "label": "Bull Terrier",
+      "ages": [
+        "puppy",
+        "adult"
+      ],
+      "withers_cm": 54.0,
+      "photo": null
+    },
+    {
+      "family": "cxg_doberman",
+      "label": "Dóberman",
+      "ages": [
+        "puppy",
+        "juvenile",
+        "adult"
+      ],
+      "withers_cm": 68.0,
+      "photo": null
+    },
+    {
+      "family": "cxg_greyhound",
+      "label": "Greyhound",
+      "ages": [
+        "adult"
+      ],
+      "withers_cm": 71.0,
+      "photo": null
+    },
+    {
+      "family": "cxg_pitbull",
+      "label": "Pitbull",
+      "ages": [
+        "puppy",
+        "juvenile",
+        "adult"
+      ],
+      "withers_cm": 48.0,
+      "photo": null
+    },
+    {
+      "family": "cxg_shiba",
+      "label": "Shiba Inu",
+      "ages": [
+        "adult"
+      ],
+      "withers_cm": 38.0,
+      "photo": null
+    }
+  ]
+}
