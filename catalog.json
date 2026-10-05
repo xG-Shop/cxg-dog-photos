@@ -3,6 +3,17 @@
   "store": null,
   "breeds": [
     {
+      "family": "cxg_bully",
+      "label": "American Bully",
+      "ages": [
+        "puppy",
+        "juvenile",
+        "adult"
+      ],
+      "withers_cm": 47.0,
+      "photo": "https://raw.githubusercontent.com/xG-Shop/cxg-dog-photos/main/photos/cxg_bully.webp"
+    },
+    {
       "family": "cxg_bullterrier",
       "label": "Bull Terrier",
       "ages": [
@@ -10,7 +21,7 @@
         "adult"
       ],
       "withers_cm": 54.0,
-      "photo": null
+      "photo": "https://raw.githubusercontent.com/xG-Shop/cxg-dog-photos/main/photos/cxg_bullterrier.webp"
     },
     {
       "family": "cxg_doberman",
@@ -21,7 +32,7 @@
         "adult"
       ],
       "withers_cm": 68.0,
-      "photo": null
+      "photo": "https://raw.githubusercontent.com/xG-Shop/cxg-dog-photos/main/photos/cxg_doberman.webp"
     },
     {
       "family": "cxg_greyhound",
@@ -30,7 +41,17 @@
         "adult"
       ],
       "withers_cm": 71.0,
-      "photo": null
+      "photo": "https://raw.githubusercontent.com/xG-Shop/cxg-dog-photos/main/photos/cxg_greyhound.webp"
+    },
+    {
+      "family": "cxg_german_shepherd",
+      "label": "Pastor alemán",
+      "ages": [
+        "juvenile",
+        "adult"
+      ],
+      "withers_cm": 62.0,
+      "photo": "https://raw.githubusercontent.com/xG-Shop/cxg-dog-photos/main/photos/cxg_german_shepherd.webp"
     },
     {
       "family": "cxg_pitbull",
@@ -41,7 +62,7 @@
         "adult"
       ],
       "withers_cm": 48.0,
-      "photo": null
+      "photo": "https://raw.githubusercontent.com/xG-Shop/cxg-dog-photos/main/photos/cxg_pitbull.webp"
     },
     {
       "family": "cxg_shiba",
@@ -50,7 +71,7 @@
         "adult"
       ],
       "withers_cm": 38.0,
-      "photo": null
+      "photo": "https://raw.githubusercontent.com/xG-Shop/cxg-dog-photos/main/photos/cxg_shiba.webp"
     }
   ]
 }

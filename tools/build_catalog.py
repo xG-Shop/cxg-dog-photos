@@ -18,6 +18,7 @@ wins over the one in the dog's json, and "store" is never touched.
 import argparse
 import json
 import shutil
+import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -49,6 +50,9 @@ def scan(pets):
 
 
 def main():
+    # Breed names carry accents (Dóberman): never die on a Windows console encoding.
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
     parser = argparse.ArgumentParser()
     parser.add_argument('--pets', type=Path, required=True, help='folder with the breed resources ([PETS])')
     parser.add_argument('--bundle', type=Path, help='cxg_companion folder to refresh')
